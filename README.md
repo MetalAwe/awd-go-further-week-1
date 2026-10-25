@@ -1,4 +1,4 @@
-# Bun Static File Server (`static.ts`)
+# Bun Static File Server (`server.ts`)
 
 A lightweight, zero-dependency HTTP static file server written in TypeScript for the [Bun](https://bun.sh) runtime. Built purely with native Bun and Node.js built-ins (`Bun.serve`, `node:path`, `node:fs/promises`) without third-party frameworks.
 
