@@ -85,10 +85,10 @@ const server = Bun.serve({
             const file = Bun.file(safePath);
             return new Response(file, { status: 200, headers });
         }catch (err: any) {
-      if (err.code === "ENOENT") {
-        return new Response("Not Found", { status: 404 });
-      }
-      return new Response("Internal Server Error", { status: 500 });
-    }
+            if (err.code === "ENOENT") {
+                return new Response("Not Found", { status: 404 });
+            }
+            return new Response("Internal Server Error", { status: 500 });
+        }
     },
 });
